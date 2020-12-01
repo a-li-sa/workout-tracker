@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {getLastWorkout, createWorkout, addExercise, getWorkoutsInRange} = require('../../../controller/workoutsControllers');
+const {getLastWorkout, createWorkout, addExercise, getWorkoutsInRange} = require('../../../controllers/workoutsController');
 
 router.route('/')
   .get(getLastWorkout)
