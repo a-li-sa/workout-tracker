@@ -8,6 +8,7 @@ const ExercisesSchema = new Schema({
   weight: Number,
   reps: Number,
   sets: Number,
+  distance: Number,
 })
 
 module.exports = ExercisesSchema;

@@ -5,7 +5,7 @@ router.route('/')
   .get(getLastWorkout)
   .post(createWorkout);
 
-router.route('/:id')
+router.route('/:_id')
   .put(addExercise);
 
 router.route('/range')
