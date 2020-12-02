@@ -37,7 +37,8 @@ module.exports = {
   },
   getWorkoutsInRange: async (req, res) => {
     try {
-
+      db.find({}).sort({day: 1})
+        .then(workout => res.send(workout))
     } catch (e) {
       console.log(e)
       res.status(401).json(e);
